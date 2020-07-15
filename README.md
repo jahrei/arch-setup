@@ -3,6 +3,9 @@ I run Arch Linux as my daily driver. Serves me well. In this repo you can find t
 
 # Prerequisites / Sources 
 
+KDE Plasma - https://github.com/KDE/plasma-desktop
+- main Desktop Environment
+
 i3-gaps - https://github.com/Airblader/i3 
 - fork of i3 window manager
 
