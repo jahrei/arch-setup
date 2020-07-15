@@ -1,5 +1,5 @@
-# arch-rice
-My Arch Linux rice.
+# arch-setup
+I run Arch Linux as my daily driver. Serves me well. In this repo you can find things that I use to maintain or modify Arch to my liking.
 
 # Prerequisites / Sources 
 
