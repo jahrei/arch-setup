@@ -21,6 +21,14 @@ zsh - https://www.zsh.org/
 ohmyzsh - https://github.com/ohmyzsh/ohmyzsh/ 
 - zsh customization, unsure if willing to keep on system due to some people telling me its unnecessary and bloat
 
+# Optional and For Fun
+
+pipes.sh -
+
+cmatrix -
+
+cli-visualizer/vis -
+
 # Guide
 
 WIP, probably not going to put this in for a while unless I'm really bored one day
