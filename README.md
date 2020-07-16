@@ -21,6 +21,9 @@ zsh - https://www.zsh.org/
 ohmyzsh - https://github.com/ohmyzsh/ohmyzsh/ 
 - zsh customization, unsure if willing to keep on system due to some people telling me its unnecessary and bloat
 
+dunst -
+- notifications daemon (note: required, a lot of applications freeze or become unstable without a notification daemon.)
+
 # Optional and For Fun
 
 pipes.sh -
