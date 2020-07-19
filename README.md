@@ -1,6 +1,10 @@
 # arch-setup
 I run Arch Linux as my daily driver. Serves me well. In this repo you can find things that I use to maintain or modify Arch to my liking.
 
+![2020-07-15_13-39](https://user-images.githubusercontent.com/68311122/87883013-e113c480-c9c9-11ea-8228-86eda9b0cb30.png)
+
+Desktop as of 7/19/20
+
 # Prerequisites / Sources 
 
 `KDE Plasma` - https://github.com/KDE/plasma-desktop
