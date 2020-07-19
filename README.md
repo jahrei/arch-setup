@@ -3,34 +3,34 @@ I run Arch Linux as my daily driver. Serves me well. In this repo you can find t
 
 # Prerequisites / Sources 
 
-KDE Plasma - https://github.com/KDE/plasma-desktop
+`KDE Plasma` - https://github.com/KDE/plasma-desktop
 - main Desktop Environment
 
-i3-gaps - https://github.com/Airblader/i3 
+`i3-gaps` - https://github.com/Airblader/i3 
 - fork of i3 window manager
 
-polybar - https://github.com/polybar/polybar 
+`polybar` - https://github.com/polybar/polybar 
 - simple, easy to configure bar
 
-picom - https://github.com/ibhagwan/picom 
+`picom` - https://github.com/ibhagwan/picom 
 - fork of picom that contains dual kawase blur and rounded corners
 
-zsh - https://www.zsh.org/ 
+`zsh` - https://www.zsh.org/ 
 - powerful interactive shell for Linux
 
-ohmyzsh - https://github.com/ohmyzsh/ohmyzsh/ 
+`ohmyzsh` - https://github.com/ohmyzsh/ohmyzsh/ 
 - zsh customization, unsure if willing to keep on system due to some people telling me its unnecessary and bloat
 
-dunst -
+`dunst` -
 - notifications daemon (note: required, a lot of applications freeze or become unstable without a notification daemon.)
 
 # Optional and For Fun
 
-pipes.sh -
+`pipes.sh` -
 
-cmatrix -
+`cmatrix` -
 
-cli-visualizer/vis -
+`cli-visualizer/vis` -
 
 # Guide
 
