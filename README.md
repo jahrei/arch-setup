@@ -34,6 +34,8 @@ Desktop as of ??/??/20
 
 `cli-visualizer/vis` -
 
+Currently finding a calendar to use; need an open-source solution that syncs well across Linux, Windows, Android, and iPhone.
+
 # Guide
 
 WIP, probably not going to put this in for a while unless I'm really bored one day
