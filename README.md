@@ -39,7 +39,7 @@ I run Arch Linux as my daily driver. Serves me very well. In this repo you can f
 - a notifications daemon, highly configurable
   (note to self: required, a lot of applications freeze or become unstable without a notification daemon.)
 
-#RICING: Optional packages/"For Fun"
+# RICING: Optional packages/"For Fun"
 
 `pipes.sh` - 
 - placeholder text
@@ -53,7 +53,7 @@ I run Arch Linux as my daily driver. Serves me very well. In this repo you can f
 
 Currently finding a calendar to use; need an open-source solution that syncs well across Linux, Windows, Android, and iPhone.
 
-#RICING: Guide & How to Clone 
+# RICING: Guide & How to Clone 
 
 WIP, probably not going to put this in for a while unless I'm really bored one day
 If I do end up adding a guide, please refer to the Wiki.
