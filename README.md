@@ -9,4 +9,5 @@ This README will be converted into a neat showcase on what exactly this repo is 
 
 Nothing will really be permanent; as I keep rolling out the changes.
 
+bleedingedge-rice will contain the most recent changes to my rice setup, until I can get one that I am happy with in order to pull.
 
