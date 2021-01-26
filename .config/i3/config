@@ -1,7 +1,16 @@
-# i3 config file (v4)
+#       ,--.-,  ,---.      ,--.-,,-,--,                ,----.   .=-.-. 
+#      |==' -|.--.'  \    /==/  /|=|  | .-.,.---.   ,-.--` , \ /==/_ / 
+#      |==|- |\==\-/\ \   |==|_ ||=|, |/==/  `   \ |==|-  _.-`|==|, |  
+#    __|==|, |/==/-|_\ |  |==| ,|/=| _|==|-, .=., ||==|   `.-.|==|  |  
+# ,--.-'\=|- |\==\,   - \ |==|- `-' _ |==|   '='  /==/_ ,    /|==|- |  
+# |==|- |=/ ,|/==/ -   ,| |==|  _     |==|- ,   .'|==|    .-' |==| ,|  
+# |==|. /=| -/==/-  /\ - \|==|   .-. ,\==|_  . ,'.|==|_  ,`-._|==|- |  
+# \==\, `-' /\==\ _.\=\.-'/==/, //=/  /==/  /\ ,  )==/ ,     //==/. /  
+#  `--`----'  `--`        `--`-' `-`--`--`-`--`--'`--`-----`` `--`-`  
+
+# jahrei's i3 config file
 
 # Note: exec is for only when i3 is started, while exec_always is for when i3 is reloaded.
-
 set $mod Mod4
 
 # Font for window titles.
@@ -9,28 +18,23 @@ font pango:JetBrains Mono 2
 
 # ==== EXECs ====
 
-# Launch polybar
+# launch polybar
 exec_always --no-startup-id /home/jahrei/.config/polybar/launch.sh
 
-
-# Launch kde's polkit auth agent, which is required for virt-manager and anything that
-# will ask for authentication.
+# launch a PolKit agent; required for certain programs
 exec_always /usr/lib/polkit-kde-authentication-agent-1
 
-# Launch dunst, the notification agent. (soon to be replaced by https://github.com/phuhl/linux_notification_center )
+# launch dunst (soon to be replaced by https://github.com/phuhl/linux_notification_center )
 exec dunst 
 
-# Launch wallpaper service, feh.
-exec_always feh --bg-scale ~/Documents/Wallpapers/031126.png
+# launch wallpaper service, feh
+exec_always feh --bg-scale ~/Documents/Wallpapers/kyle-johnson-8Gl7Ew-q6D8-unsplash.jpg
 
 # no idea what this is just leave it 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # Launch nm-applet, manager for NetworkManager
 exec --no-startup-id nm-applet
-
-# Launch a script to prevent Arch from going blank.
-# exec_always ~/Programs/i3/shell/nodim
 
 # ==== Automated workspace madness. ====
 
@@ -39,11 +43,11 @@ exec --no-startup-id bash ~/Programs/i3/shell/main-ws2
 
 # Launch Firefox on workspace 2.
 exec --no-startup-id i3-msg 'workspace 2:Web; exec /usr/bin/firefox'; workspace_layout stacking
-for_window [class="firefox"] move to workspace $ws2
+for_window [class="firefox"] move to workspace $ws5
 
 # Launch Discord on workspace 3.
 exec --no-startup-id bash ~/Programs/i3/shell/third-ws
-for_window [class="Discord"] move to workspace $ws3
+for_window [class="Discord"] move to workspace $ws6
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -55,13 +59,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# launch a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start rofi
+# launch rofi
 bindsym $mod+d exec --no-startup-id rofi -show run -lines 3 -eh 2 -bw 0 -width 100 -padding 400 -fullscreen
 
 # change focus
@@ -185,21 +189,31 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# launch flameshot screenshot gui upon prtscr press
 bindsym Print exec flameshot gui
 
-# Workspaces 1 and 4 go to main monitor, workspaces 2 and 3 go to secondary
-# The DP-2 will ahve to be changed once the HDMI cable comes in...
-# WS1 is the main screen
-workspace 1 output DP-2
+# ======= Workspaces =======
 
-# WS2 is for firefox
-workspace 2 output DVI-D-0
+# WS1: Main Home Screen
+workspace 1 output DP-4
 
-# WS3 is for utilities such as discord and spotify
-workspace 3 output DVI-D-0
+# WS2: Right Main Screen
+workspace 2 output DP-0
 
-# WS4 is for coding and an isolated environment 
+# WS3: Left Main Screen
+workspace 3 output HDMI-0
+
+# WS4: Virtual Machine managing and other various things
 workspace 4 output DP-2
+
+# WS5: General, mainly Firefox
+workspace 5 output DP-4
+
+# WS6: General, various (Right Monitor)
+workspace 6 output DP-0
+
+# WS7: General, various (Left Monitor)
+workspace 7 output HDMI-0
 
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
 for_window [class="plasmashell"] floating enable;
