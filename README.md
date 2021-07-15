@@ -1,7 +1,7 @@
 
 
 # jahrei@Galaxias
-The future of computing is nigh.
+the future is here
 
 ~~I run Arch Linux as my daily driver. Serves me very well. In this repo you can find things that I use to maintain or modify Arch to my liking.~~
 
